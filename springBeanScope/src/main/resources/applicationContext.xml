@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+<context:property-placeholder location="classpath:os.properties"/>
+<!--  <context:component-scan base-package="com.my.springIocAndDi" /> -->
+	<!-- Define your beans here -->
+
+	<!-- define the dependency -->
+
+	<!-- <bean id="os" class="com.my.springIocAndDi.Os">
+		<property name="name" value="Mac"></property>
+		<property name="version" value="10.12"></property>
+	</bean> -->
+	<!-- constructor injection example <bean id="java" class="com.my.springIocAndDi.JavaLanguage" 
+		> <constructor-arg ref="os"/> </bean> -->
+
+	<!-- 	<bean id="os" class="com.my.springIocAndDi.Os">
+		<property name="name" value="${os.name}"></property>
+		<property name="version" value="${os.version}"></property>
+	</bean> 
+	Setter injection
+	<bean id="java" class="com.my.springIocAndDi.JavaLanguage">
+		<property name="os" ref="os"></property>
+	</bean>
+
+	<bean id="php"  class="com.my.springIocAndDi.PhpLanguage" scope="prototype" 
+	init-method="initDatabase"
+	destroy-method="destroyDatabase"
+	 >
+	</bean>
+ -->
+
+
+</beans>
+
+
+
+
+
